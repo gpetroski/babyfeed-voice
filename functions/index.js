@@ -32,10 +32,21 @@ const DEFAULT = 'Default Welcome Intent';
 const TIMEZONE = 'America/Los_Angeles';
 const ERROR_MESSAGE = 'An error has occurred, please try again later';
 
+const DEFAULT_FEED_AMOUNT = 3.0;
+
 app.intent(SAVE_FEED_TIME_ACTION, (conv, parameters) => {
     return new Promise((resolve, reject)  => {
-        console.log(parameters);
-        var feedAmount = parameters.feedAmount || 3;
+        var feedAmount = DEFAULT_FEED_AMOUNT;
+
+        try {
+            if (parameters.feedAmount) {
+                feedAmount = parseFloat(parameters.feedAmount);
+            }
+        } catch (error) {
+            console.log(error);
+            feedAmount = DEFAULT_FEED_AMOUNT;
+        }
+
         var feedTime = {
             feedTime: new Date(),
             feedAmount: feedAmount
