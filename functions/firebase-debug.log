@@ -1,0 +1,34 @@
+[debug] [2018-07-23T15:01:54.437Z] ----------------------------------------------------------------------
+[debug] [2018-07-23T15:01:54.439Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2018-07-23T15:01:54.439Z] CLI Version:   3.19.3
+[debug] [2018-07-23T15:01:54.439Z] Platform:      darwin
+[debug] [2018-07-23T15:01:54.439Z] Node Version:  v8.11.3
+[debug] [2018-07-23T15:01:54.440Z] Time:          Mon Jul 23 2018 08:01:54 GMT-0700 (PDT)
+[debug] [2018-07-23T15:01:54.440Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-07-23T15:01:54.450Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-07-23T15:01:54.450Z] > authorizing via signed-in user
+[debug] [2018-07-23T15:01:54.452Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/nextbus-bd01e  
+  
+ Mon Jul 23 2018 08:01:54 GMT-0700 (PDT)
+[debug] [2018-07-23T15:01:54.858Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-23T15:01:54.859Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/nextbus-bd01e/tokens  
+  
+ Mon Jul 23 2018 08:01:54 GMT-0700 (PDT)
+[debug] [2018-07-23T15:01:55.273Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-23T15:01:55.274Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/nextbus-bd01e  
+  
+ Mon Jul 23 2018 08:01:55 GMT-0700 (PDT)
+[debug] [2018-07-23T15:01:55.737Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/gpetrosk/projects/nextbus-voice'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2018-07-23T15:01:56.186Z] Fetching environment
+[debug] [2018-07-23T15:01:56.187Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/529931734616:getServerAppConfig  
+  
+ Mon Jul 23 2018 08:01:56 GMT-0700 (PDT)
+[debug] [2018-07-23T15:01:56.965Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-23T15:01:56.966Z] Starting @google-cloud/functions-emulator
+[debug] [2018-07-23T15:01:58.002Z] Parsing function triggers
+[info] ✔  functions: dialogflowFirebaseFulfillment: http://localhost:5000/nextbus-bd01e/us-central1/dialogflowFirebaseFulfillment
